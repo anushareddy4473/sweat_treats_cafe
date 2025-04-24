@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for proper rendering & mobile responsiveness -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Page title shown in browser tab -->
+  <title>Contact Us - Sweet Treats Cafe</title>
+
+  <!-- Internal CSS to style the contact page -->
+  <style>
+    /*─────────────────────*
+     *   Global Styles     *
+     *─────────────────────*/
+    body {
+      font-family: Arial, sans-serif;  /* Base font for readability */
+      background-color: #f4f4f4;       /* Light grey page background */
+      margin: 0;                       /* Remove default margin */
+      padding: 0;                      /* Remove default padding */
+    }
+
+    /*─────────────────────*
+     *     Header Styles   *
+     *─────────────────────*/
+    header {
+      background-color: #ffebcd; /* Blanched almond background */
+      padding: 20px;             /* Space around the header */
+      text-align: center;        /* Center header text */
+    }
+    header h1 {
+      font-size: 2.5rem; /* Large, prominent heading */
+      margin: 0;         /* Remove default margin */
+    }
+
+    /*─────────────────────*
+     *   Navigation Styles *
+     *─────────────────────*/
+    nav {
+      background-color: #ff6347; /* Tomato-red nav background */
+      text-align: center;        /* Center all nav links */
+      padding: 10px 0;           /* Vertical padding */
+    }
+    nav a {
+      color: white;             /* White text for links */
+      margin: 0 15px;           /* Horizontal spacing */
+      text-decoration: none;    /* Remove underline */
+      font-size: 1.2rem;        /* Slightly larger text */
+    }
+    nav a:hover {
+      text-decoration: underline; /* Underline on hover for feedback */
+    }
+
+    /*─────────────────────*
+     * Contact Container   *
+     *─────────────────────*/
+    .contact-container {
+      max-width: 1200px;                    /* Limit max width */
+      margin: 30px auto;                    /* Center container & add top/bottom spacing */
+      padding: 20px;                        /* Inner padding */
+      background-color: #fff;               /* White background for form area */
+      border-radius: 8px;                   /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle drop shadow */
+    }
+    .contact-container h2 {
+      text-align: center; /* Center the sub-heading */
+      font-size: 2rem;    /* Prominent sub-heading size */
+      margin-bottom: 20px;/* Space below the heading */
+    }
+
+    /*─────────────────────*
+     *   Contact Info      *
+     *─────────────────────*/
+    .contact-info {
+      display: flex;               /* Side-by-side columns */
+      justify-content: space-between; /* Space between the two columns */
+      margin-bottom: 30px;         /* Space below this section */
+    }
+    .contact-info div {
+      width: 48%; /* Each column takes roughly half the width */
+    }
+    .contact-info h3 {
+      font-size: 1.5rem; /* Section headings */
+      margin-bottom: 10px;/* Space below the heading */
+    }
+    .contact-info p {
+      font-size: 1rem; /* Regular paragraph text */
+      margin: 5px 0;   /* Vertical spacing between lines */
+    }
+
+    /*─────────────────────*
+     *  Contact Form Grid  *
+     *─────────────────────*/
+    .contact-form form {
+      display: grid;                  /* Use CSS grid */
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      gap: 20px;                      /* Space between grid items */
+    }
+    .form-group {
+      width: 80%; /* Ensure full width within each grid cell */
+    }
+
+    /*─────────────────────*
+     * Form Field Styles   *
+     *─────────────────────*/
+    label {
+      font-size: 1.1rem;  /* Clear, readable label text */
+      display: block;     /* Label on its own line */
+      margin-bottom: 5px; /* Space below the label */
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;                /* Full width of container */
+      padding: 10px;              /* Padding for comfort */
+      margin: 5px 0 20px 0;       /* Spacing between fields */
+      border: 1px solid #ddd;     /* Light grey border */
+      border-radius: 4px;         /* Slightly rounded corners */
+      font-size: 1rem;            /* Base font size */
+    }
+    textarea {
+      height: 150px; /* Taller box for multiline input */
+    }
+
+    /*─────────────────────*
+     *   Button Styles     *
+     *─────────────────────*/
+    .button-container {
+      text-align: center; /* Center the button */
+    }
+    .contact-btn {
+      background-color: #ff6347; /* Tomato-red button */
+      color: white;              /* White text */
+      font-size: 1.2rem;         /* Emphasized text */
+      padding: 10px 20px;        /* Comfortable click area */
+      border: none;              /* Remove default border */
+      border-radius: 4px;        /* Rounded corners */
+      cursor: pointer;           /* Pointer on hover */
+      transition: background-color 0.3s; /* Smooth hover transition */
+    }
+    .contact-btn:hover {
+      background-color: #ff4500; /* Darker tomato on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with the cafe name -->
+  <header>
+    <h1>Sweet Treats Cafe</h1>
+  </header>
+
+  <!-- Main site navigation -->
+  <nav>
+    <a href="index.html" target="_blank">Home</a>
+    <a href="about.html" target="_blank">About</a>
+    <a href="menu.html" target="_blank">Menu</a>
+    <a href="order.html" target="_blank">Order</a>
+  </nav>
+
+  <!-- Container for contact information and form -->
+  <div class="contact-container">
+    <!-- Section title -->
+    <h2>Contact Us</h2>
+
+    <!-- Static contact info: address, phone, email -->
+    <div class="contact-info">
+      <div>
+        <h3>Our Location</h3>
+        <p>123 Sweet Street, Dessert City, DC 54321</p>
+      </div>
+      <div>
+        <h3>Phone & Email</h3>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: contact@sweettreatscafe.com</p>
+      </div>
+    </div>
+
+    <!-- Contact form for users to submit inquiries -->
+    <div class="contact-form">
+      <h3>Get in Touch</h3>
+      <form action="#" method="POST">
+        <!-- Full Name field -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Email field -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Phone field -->
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <!-- Message textarea -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we assist you?" required></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div class="button-container">
+          <button type="submit" class="contact-btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
