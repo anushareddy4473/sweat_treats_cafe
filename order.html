@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Order - Sweet Treats Cafe</title>
+  <style>
+    /*─────────────────────*
+     *   Global Styles     *
+     *─────────────────────*/
+    body {
+      font-family: Arial, sans-serif; /* Base font for readability */
+      background-color: #f4f4f4;      /* Light grey background */
+      margin: 0;                      /* Remove default margin */
+      padding: 0;                     /* Remove default padding */
+    }
+
+    /*─────────────────────*
+     *     Header Styles   *
+     *─────────────────────*/
+    header {
+      background-color: #ffebcd; /* Blanched almond background */
+      padding: 20px;             /* Space around header content */
+      text-align: center;        /* Center the header text */
+    }
+    header h1 {
+      font-size: 2.5rem; /* Large heading size */
+      margin: 0;         /* Remove extra margin */
+    }
+
+    /*─────────────────────*
+     *   Navigation Styles *
+     *─────────────────────*/
+    nav {
+      text-align: center;       /* Center nav links */
+      background-color: #ff6347;/* Tomato-red background */
+      padding: 10px 0;          /* Vertical padding */
+    }
+    nav a {
+      color: white;             /* White text for links */
+      margin: 0 15px;           /* Horizontal spacing between links */
+      text-decoration: none;    /* Remove underline */
+      font-size: 1.2rem;        /* Slightly larger text */
+    }
+    nav a:hover {
+      text-decoration: underline; /* Underline on hover for feedback */
+    }
+
+    /*─────────────────────*
+     *   Order Container   *
+     *─────────────────────*/
+    .order-container {
+      max-width: 1200px;                     /* Limit container width */
+      margin: 30px auto;                     /* Center and vertical spacing */
+      padding: 20px;                         /* Inner spacing */
+      background-color: #fff;                /* White background for form */
+      border-radius: 8px;                    /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle drop shadow */
+    }
+    .order-container h2 {
+      text-align: center; /* Center the sub-heading */
+      font-size: 2rem;    /* Substantial size for emphasis */
+      margin-bottom: 20px;/* Space below heading */
+    }
+
+    /*─────────────────────*
+     *   Form Field Styles *
+     *─────────────────────*/
+    .form-group {
+      margin-bottom: 15px; /* Space below each field group */
+    }
+    label {
+      font-size: 1.1rem; /* Clear, readable label text */
+      display: block;    /* Label on its own line */
+      margin-bottom: 5px;/* Space between label and input */
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 80%;            /* 80% width of container for form fields */
+      padding: 10px;         /* Inner padding for comfort */
+      margin: 5px 0 10px 0;  /* Space around inputs */
+      border: 1px solid #ddd;/* Light grey border */
+      border-radius: 4px;    /* Slight rounding of corners */
+      font-size: 1rem;       /* Base font size */
+    }
+    textarea {
+      height: 150px; /* Height for multiline input */
+    }
+
+    /*─────────────────────*
+     *    Button Styles    *
+     *─────────────────────*/
+    .button-container {
+      text-align: center; /* Center the submit button */
+    }
+    .order-btn {
+      background-color: #ff6347; /* Tomato-red button */
+      color: white;              /* White text */
+      font-size: 1.2rem;         /* Emphasized text */
+      padding: 10px 20px;        /* Comfortable click area */
+      border: none;              /* Remove default border */
+      border-radius: 4px;        /* Rounded corners */
+      cursor: pointer;           /* Pointer on hover */
+      transition: background-color 0.3s; /* Smooth hover transition */
+    }
+    .order-btn:hover {
+      background-color: #ff4500; /* Darker tomato on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Cafe Name -->
+  <header>
+    <h1>Sweet Treats Cafe</h1>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav>
+    <a href="index.html" target="_blank">Home</a>
+    <a href="about.html" target="_blank">About</a>
+    <a href="menu.html" target="_blank">Menu</a>
+    <a href="contact.html" target="_blank">Contact</a>
+  </nav>
+
+  <!-- Order Form Container -->
+  <div class="order-container">
+    <h2>Place Your Order</h2>
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Phone Field -->
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <!-- Item Selection Dropdown -->
+      <div class="form-group">
+        <label for="item">Select Item</label>
+        <select id="item" name="item" required>
+          <option value="Classic Glazed Donut">Classic Glazed Donut</option>
+          <option value="Vanilla Cupcake">Vanilla Cupcake</option>
+          <option value="Red Velvet Slice">Red Velvet Slice</option>
+          <option value="Blueberry Muffin">Blueberry Muffin</option>
+          <option value="Custom Cake">Custom Cake</option>
+          <option value="Iced Coffee">Iced Coffee</option>
+          <option value="Chocolate Brownie">Chocolate Brownie</option>
+          <option value="Strawberry Milkshake">Strawberry Milkshake</option>
+          <option value="Choco Lava Cake">Choco Lava Cake</option>
+          <option value="Vanilla Ice Cream Sundae">Vanilla Ice Cream Sundae</option>
+        </select>
+      </div>
+
+      <!-- Special Requests Textarea -->
+      <div class="form-group">
+        <label for="message">Special Requests / Notes</label>
+        <textarea id="message" name="message" placeholder="Any special requests for your order?"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="button-container">
+        <button type="submit" class="order-btn">Submit Order</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
