@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Sweet Treats Cafe</title>
+  <style>
+    /* General Body Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f6; /* Soft pink background color */
+    }
+
+    /* Navigation Bar Styling */
+    nav {
+      background-color: #ffb3c6; /* Light pink background for nav */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 25px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds shadow below the nav bar */
+    }
+
+    /* Logo in the Navigation Bar */
+    .nav-logo {
+      font-size: 24px;
+      color: #a4133c; /* Dark pink color for the logo */
+      font-weight: bold;
+      font-family: 'Brush Script MT', cursive; /* Cursive font style */
+    }
+
+    /* Styling for Navigation Links */
+    .nav-links a {
+      text-decoration: none;
+      color: #590d22; /* Dark red color for links */
+      margin: 0 15px;
+      font-size: 16px;
+      transition: color 0.3s; /* Smooth color transition on hover */
+    }
+
+    /* Hover Effect on Navigation Links */
+    .nav-links a:hover {
+      color: #ff4d6d; /* Change to light red color on hover */
+    }
+
+    /* Title Styling */
+    h1.menu-title {
+      text-align: center;
+      font-family: 'Brush Script MT', cursive; /* Cursive title font */
+      font-size: 42px;
+      color: #c9184a; /* Bright pink color for the title */
+      margin-top: 20px;
+    }
+
+    /* Horizontal Rule Styling */
+    hr {
+      width: 80%;
+      border: 1px solid #ffb3c6; /* Light pink border for the hr */
+    }
+
+    /* Menu Container Styling */
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Spacing between cards */
+      padding: 30px 10px;
+    }
+
+    /* Menu Card Styling */
+    .menu-card {
+      width: 250px;
+      background-color: #fff; /* White background for cards */
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Soft shadow around cards */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease-in; /* Fade-in animation on page load */
+    }
+
+    /* Hover Effect on Menu Cards */
+    .menu-card:hover {
+      transform: scale(1.05); /* Slight zoom effect */
+      box-shadow: 4px 4px 15px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+    }
+
+    /* Styling for Menu Item Images */
+    .menu-card img {
+      border-radius: 10px; /* Rounded corners for images */
+      width: 200px;
+      height: 200px;
+      object-fit: cover; /* Ensures images fit properly inside the box */
+    }
+
+    /* Menu Item Title Styling */
+    .menu-card h2 {
+      color: #a4133c; /* Dark pink color for item titles */
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    /* Menu Item Description Styling */
+    .menu-card p {
+      font-size: 14px;
+      color: #444; /* Dark gray color for item descriptions */
+    }
+
+    /* Price Styling */
+    .menu-card span {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #d63384; /* Bright pink color for prices */
+    }
+
+    /* Keyframe Animation for Fade-In Effect */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Back to Top Button Styling */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff4d6d; /* Button background color */
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50px; /* Circular button shape */
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* Shadow around button */
+    }
+
+    /* Hover Effect for Back to Top Button */
+    .back-to-top:hover {
+      background-color: #c9184a; /* Darker pink color on hover */
+    }
+
+    /* Responsive Styling for Smaller Screens */
+    @media (max-width: 768px) {
+      .menu-card {
+        width: 90%; /* Make menu cards take up more space on small screens */
+      }
+
+      /* Stack Navigation Links on Small Screens */
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Adjust Link Spacing on Small Screens */
+      .nav-links a {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-logo">Sweet Treats</div>
+    <div class="nav-links">
+      <a href="index.html" target="_blank">Home</a>
+      <a href="order.html" target="_blank">Order</a>
+      <a href="about.html" target="_blank">About</a>
+      <a href="contact.html" target="_blank">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <h1 class="menu-title">Our Sweet Menu</h1>
+  <hr>
+
+  <!-- Menu Items -->
+  <section class="menu-container">
+    <!-- Menu Card 1 -->
+    <div class="menu-card">
+      <img src="https://natashaskitchen.com/wp-content/uploads/2021/05/Glazed-Donuts-5.jpg" alt="Glazed Donut" width="250" height="250">
+      <h2>Classic Glazed Donut</h2>
+      <p>Soft, airy donut with a sweet glaze.</p>
+      <span>$1.50</span>
+    </div>
+
+    <!-- Menu Card 2 -->
+    <div class="menu-card">
+      <img src="https://bing.com/th?id=OSK.853e6ffe6ca09efe731eb45f5b8d0f4f" alt="Cupcake" width="250" height="250">
+      <h2>Vanilla Cupcake</h2>
+      <p>Fluffy vanilla cupcake with pink frosting.</p>
+      <span>$2.00</span>
+    </div>
+
+    <!-- Add more menu items here -->
+
+  </section>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Top</button>
+
+</body>
+</html>
+q
