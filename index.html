@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and mobile responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title that appears on browser tab -->
+    <title>Sweet Treats Cafe | Home</title>
+    
+    <style>
+        /* Applies box-sizing to all elements so padding and borders don’t affect width/height */
+        * {
+            box-sizing: border-box;
+        }
+      
+        /* Header styling - aligns title and adds background */
+        header > h1 {
+            background-color: aliceblue;
+            text-align: center;
+            margin-top: 30px;
+        }
+      
+        /* Navigation bar styling */
+        nav {
+            background-color: #ffb6c1; /* light pink */
+            padding: 1em;
+            text-align: center;
+            position: sticky; /* stays fixed at top when scrolling */
+            top: 0;
+            z-index: 999; /* keeps nav on top of other elements */
+        }
+      
+        /* Styling for each nav link */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff; /* white text */
+            background-color: #d63384; /* cherry-pink background */
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+      
+        /* Nav link hover effect */
+        nav a:hover {
+            background-color: #a61e4d; /* darker pink on hover */
+        }
+      
+        /* Main area styling */
+        main {
+            padding: 2rem;
+            background-color: #fff0f5; /* soft lavender-pink background */
+        }
+      
+        /* Each section inside main */
+        main section {
+            background-color: #ffffff; /* white card */
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px; /* rounded corners */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow */
+            text-align: center;
+        }
+      
+        /* Section heading */
+        main section h2 {
+            color: #d63384; /* cherry-pink */
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+      
+        /* Paragraph text */
+        main section p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+      
+        /* Button-style links inside main */
+        main a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: #ff6f91; /* soft pink */
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+      
+        /* Hover effect for main links */
+        main a:hover {
+            background-color: #d63384;
+        }
+      
+        /* Footer styling */
+        footer {
+            background-color: #ffccd5;
+            text-align: center;
+            padding: 1em;
+            font-size: 0.9rem;
+            color: #333;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+      
+        /* Footer links */
+        footer a {
+            color: #d63384;
+            text-decoration: none;
+        }
+      </style>
+      
+</head>
+<body>
+    <!-- Website Header -->
+    <header>
+        <h1>Sweet Treats Cafe</h1>
+    </header>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <!-- Links to other pages (open in new tab) -->
+        <a href="about.html" target="_blank">about</a>
+        <a href="menu.html" target="_blank">menu</a>
+        <a href="order.html" target="_blank">orders</a>
+        <a href="contact.html" target="_blank">contact</a>
+    </nav>
+    <br><br>
+    
+    <!-- Main content of the page -->
+    <main>
+        <!-- About Section Preview -->
+        <section class="about-preview">
+            <h2>Welcome to Sweet Treats!</h2>
+            <p>We bake <em>love</em> into every bite. Explore our cozy cafe and try our fresh goodies.</p>
+            <!-- Link to menu page -->
+            <a href="menu.html">Learn More</a>
+        </section>
+    
+        <!-- Menu Section Preview -->
+        <section class="menu-preview">
+            <h2>Our Specials</h2>
+            <!-- Sample images of menu items -->
+            <img src="https://th.bing.com/th/id/OIP.QGvo-c3j0WUYvN1ceE5oFQHaGx?rs=1&pid=ImgDetMain" alt="Donut" width="200" height="200">
+            <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?cs=srgb&dl=bakery-baking-blueberries-291528.jpg&fm=jpg" alt="Cake" width="200" height="200">
+            <br><br>
+            <!-- Link to full menu -->
+            <a href="menu.html">View Full Menu</a>
+        </section>
+    
+        <!-- Order Call-To-Action Section -->
+        <section class="order-call">
+            <h2>Party or Event?</h2>
+            <p>Customize your dessert box for birthdays, weddings, and more!</p>
+            <!-- Link to order page -->
+            <a href="order.html">Place an Order</a>
+        </section>
+    </main>
+    
+    <!-- Footer with copyright -->
+    <footer>
+        <br>
+        <p>&copy; 2025 Sweet Treats Cafe. All rights reserved.</p>
+        <!-- Social media links -->
+        <p>Follow us on 
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a>
+        </p>
+    </footer>
+</body>
+</html>
